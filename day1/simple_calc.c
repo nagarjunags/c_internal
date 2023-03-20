@@ -3,25 +3,25 @@ int main()
 {
     int a,b;
     char c;
-    printf("Enter a:");
+    printf("Enter a: ");
     scanf("%d",&a);
-    printf("Enter the operator:");
-    scanf("%c",& c);
-    printf("Enter b");
+    printf("Enter the operator: ");
+    scanf(" %c", &c);
+    printf("Enter b: ");
     scanf("%d",&b);
-    case(c)
+    switch(c)
     {
-        case: '+'
-            printf("%d+%d=%d",a,b,a+b);
+        case '+':
+            printf("%d+%d=%d\n",a,b,a+b);
             break;
-        case: '-'
-            printf("%d-%d=%d",a,b,a-b);
+        case '-':
+            printf("%d-%d=%d\n",a,b,a-b);
             break;
-        case: '*'
-            printf("%d*%d=%d",a,b,a*b);
+        case '*':
+            printf("%d*%d=%d\n",a,b,a*b);
             break;
-        case: '/'
-            printf("%d/%d=%d",a,b,a/b);
+        case '/':
+            printf("%d/%d=%d\n",a,b,a/b);
             break;
         default:
             printf("Error");  
