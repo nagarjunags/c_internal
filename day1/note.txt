@@ -1,0 +1,11 @@
+program-sequence of steps to perform specific task
+C invented by Dennis Ritchie ->in bell laboratory in 1972
+--------------------------------------------------------------------------------------------------
+FEUTURES OF C:
+	*Ease to use
+	*portabelity
+	*platform independent
+	*efficiency
+	*reliability
+	
+
