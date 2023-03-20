@@ -4,11 +4,11 @@ int main()
     int m;
     printf("Enter the marks:");
     scanf("%d",&m);
-    if(m>85)
+    if(m>=85)
         printf("Distinction\n");
-    else if(m>75)
+    else if(m>=75)
         printf("first class\n");
-    else if(m>65)
+    else if(m>=65)
         printf("second class\n");
     else if (m>=35)
         printf("pass\n");         
