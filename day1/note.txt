@@ -7,5 +7,18 @@ FEUTURES OF C:
 	*platform independent
 	*efficiency
 	*reliability
+-------------------------------------------------------------------------------------------------
+BRANCHING:
+	transfer the controll from one part to another with or without condition
+		1.conditiona
+		2.unconditional
+	conditional statements:
+		branching based on a condition
+			if
+			if else
+			nested if
+			if else ladder
+			switch case
+
 	
 
