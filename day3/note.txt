@@ -1,5 +1,5 @@
 Function:
-    library
+    library.
     user defined
         1.function declaration
             return type
@@ -20,7 +20,7 @@ Function:
                 return(expression);
             }
 
-            
+
         3.function call
         **no need to declare function if return type is of int 
 
