@@ -9,7 +9,7 @@ Function:
         2.function definition
             
           SYNTAX:  
-            return_type fun_name(arg list)
+            return_type fun_name(formal arg list)
             {
                 local variable declaration
                 stmnt1;
@@ -22,6 +22,16 @@ Function:
 
 
         3.function call
+
+              SYNTAX:
+                fun_name(actual arguments)
+
+
+CATOGARIES OF FUNCTION:
+    1.functions with no arg and no return type
+    2.functions with args and no return value
+    3.functions with args and return value
+
         **no need to declare function if return type is of int 
 
 Benifits of function:
