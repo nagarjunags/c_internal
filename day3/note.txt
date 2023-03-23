@@ -1,6 +1,36 @@
 Function:
     library
     user defined
+        1.function declaration
+            return type
+            declaring and initializing fun name
+            parameter list
+            semicolon
+        2.function definition
+            
+          SYNTAX:  
+            return_type fun_name(arg list)
+            {
+                local variable declaration
+                stmnt1;
+                stmnt2;
+                -------
+                -----
+                stmnt n;
+                return(expression);
+            }
+
+            
+        3.function call
+        **no need to declare function if return type is of int 
+
+Benifits of function:
+    1.modularity
+    2.easy code reusability
+    3.easy to debug in large program
+
+
+------------------------------------------------------------------    
 important library
     assert.h
     complex.h
@@ -34,4 +64,14 @@ functions in string.h
     strset    sets all char of string to given string
     strnset
     strrev    reverse string
+
+
+
+
+Assignments:
+1.power of a number
+2.calculate roots of quad eqn
+3.To return smallest int greater or equlal to given number
+4.return largest int greater or equal to given number 
+5.calculate modulo of two numbers
 
