@@ -5,3 +5,4 @@ a.out
 !*c
 !*gitignore
 !*.py
+!*.*
