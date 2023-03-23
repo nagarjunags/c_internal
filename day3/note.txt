@@ -1,0 +1,37 @@
+Function:
+    library
+    user defined
+important library
+    assert.h
+    complex.h
+    float.h
+    limit.h
+    math.h
+    stdio.h
+    time.h
+    string.h
+important Functions  in ctype.h
+    isalnum()  int 
+    isalpha(c) int
+    isascii(c) int
+    isdigit(d) int
+    toascii(c) int
+    tolower(c) char
+    toupper(c) char
+
+
+functions in string.h      
+    strcpy
+    strncpy
+    strcmp
+    strncmp
+    strcmpi    without regarding to case
+    stricmp     same as strcmpi
+    strnicmp first n char without regard to case
+    strdup    duplicate the string
+    strchr     finds first accurance of the character
+    strstr    finds first accurance of a string inanother string
+    strset    sets all char of string to given string
+    strnset
+    strrev    reverse string
+

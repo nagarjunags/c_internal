@@ -12,7 +12,7 @@ void main()
             printf("area:%f\n",3.142*rad*rad);
             break;
         case 2:
-            printf("Enter l and b: ");
+            printf("Enter l and b: ");   
             scanf("%d%d",&l,&b);
             printf("area = %d\n",l*b);
             break;
