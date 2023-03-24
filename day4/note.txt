@@ -29,3 +29,9 @@ STRING:
 
 1.sum of 2 matrix
 2.multiplication of 2 matrix
+
+
+
+1.sorting: bubble and isertion
+2.searching:linear and binary
+3.strings palindrome.
