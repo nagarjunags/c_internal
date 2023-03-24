@@ -4,7 +4,7 @@
 void main()
 {
     int a[5],s2;
-    float s1;
+   // float s1;
     printf("Enter:");
     for(int i=0;i<5;i++)
         scanf("%d",&a[i]);
@@ -12,10 +12,10 @@ void main()
 
     for(int i=0;i<5;i++)
     {
-           // s1=sqrt(a[i]);
-            s2=sqrt(a[i]);
-            //if(s1==(float)s2)
-            if(s2*s2==a[i])
+        // s1=sqrt(a[i]);
+        s2=sqrt(a[i]);
+        //if(s1==(float)s2)
+        if(s2*s2==a[i])
             printf("%d   ",a[i]);
     }    
 }
