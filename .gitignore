@@ -2,7 +2,7 @@ a.out
 *
 !*.txt
 !*pdf
-!*c
+!*.c
 !*gitignore
 !*.py
 !*.*
