@@ -1,0 +1,26 @@
+ARRAY:
+    collection of elements with common name and type.
+    differ in indices
+
+
+    SYNTAX:
+    declaration
+        type array_name [size]
+
+    EG:
+        int a[];       //dynamic memory allocation and is done during first initialization.
+        int a[10] ;    //one D
+        int a[5][2];   //multi D
+
+
+    initialization:
+        
+        int a[5]={2,2,2}  //a[3]-a[4] will be =0;
+        int a[2][2]={
+                        {2,2},
+                        {2,2}
+                    }     
+-----------------------------------------------------------            
+STRING:
+    Array of characters. 
+        char a[2]={'a','b'};

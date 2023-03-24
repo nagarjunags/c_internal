@@ -1,3 +1,4 @@
+//not exe
 #include<stdio.h>
 int fibo(int);
 void main()
