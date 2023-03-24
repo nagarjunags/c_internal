@@ -1,8 +1,0 @@
-a.out
-*
-!*.txt
-!*pdf
-!*.c
-!*gitignore
-!*.py
-!*.*
