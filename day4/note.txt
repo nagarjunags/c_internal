@@ -19,8 +19,13 @@ ARRAY:
         int a[2][2]={
                         {2,2},
                         {2,2}
-                    }     
+                    }
+        int a[2][2]={2,2,2,2};                 
 -----------------------------------------------------------            
 STRING:
     Array of characters. 
         char a[2]={'a','b'};
+
+
+1.sum of 2 matrix
+2.multiplication of 2 matrix
