@@ -27,10 +27,10 @@ void main()
     }
     if (a[lo] == key) 
     {
-       printf("Founf at %d\n",lo);
+       printf("Founf at %d\n",lo+1);
     }
     else if (a[hi] == key) {
-        printf(" Found at %d",hi);
+        printf(" Found at %d",hi+1);
        
     }
     else {
