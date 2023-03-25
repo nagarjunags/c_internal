@@ -27,7 +27,7 @@ void main()
              
     }
     else if (a[hi] == key) {
-        printf("Found at %d",hi);
+        printf(" Found at %d",hi);
        
     }
     else {
