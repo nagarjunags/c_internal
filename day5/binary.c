@@ -13,18 +13,21 @@ void main()
     int hi=n;
     int lo =0;
     
-    while (hi - lo > 1) {
+    while (hi - lo > 1)
+    {
         int mid = (hi + lo) / 2;
-        if (a[mid] < key) {
+        if (a[mid] < key) 
+        {
             lo = mid + 1;
         }
-        else {
+        else 
+        {
             hi = mid;
         }
     }
-    if (a[lo] == key) {
+    if (a[lo] == key) 
+    {
        printf("Founf at %d\n",lo);
-             
     }
     else if (a[hi] == key) {
         printf(" Found at %d",hi);
