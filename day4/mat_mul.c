@@ -28,12 +28,13 @@ int main()
  
     for (c = 0; c < m; c++) {
       for (d = 0; d < q; d++) {
+          multiply[c][d] = 0;
         for (k = 0; k < p; k++) {
           multiply[c][d] = multiply[c][d] + first[c][k]*second[k][d];
         }
  
-        /*multiply[c][d] = sum;
-        sum = 0;*/
+        
+        
       }
     }
  
