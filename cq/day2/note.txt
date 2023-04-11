@@ -106,3 +106,4 @@ INPUT STATEMENTS:
         default value of the variable in stacks will have garbage value
 
         --->default value of the global variable is 0
+        --->global variables can be declared multiple times.
