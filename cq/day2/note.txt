@@ -107,3 +107,51 @@ INPUT STATEMENTS:
 
         --->default value of the global variable is 0
         --->global variables can be declared multiple times.
+        --->use extern to use the globsl variable in other programs also
+        --->when there is no memory allocated to a variable then linker error
+                eg:
+                    #include<stdio.h>
+                    extern int a;
+                    void main()
+                    {
+                        a=20;
+                    }
+                    //Lnker ERROR!!
+
+-------------------------------------------------------------------------------------------
+FUNCTION PROTOTYPE:
+
+-------------------------------------------------------------------------------------------
+MAIN FUNCTION
+
+void main()      int main()     int main(void)
+------------------------------------------------------------------------------------
+LOCAL VARIABLES:
+    declared in stack memory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+UNFORMATED IO:
+    eg:
+        scanf("%[^\n]s",str);//stop scanning only after hitting \n
+        scanf("%[^5]s",str);//stop scanning after hitting 5
+        scanf("%[a-z]s",str);reads only letters from a-z and stops when it hits any other characters.
+        scanf("%[a-z,A-Z,0-9,' ']s",str);

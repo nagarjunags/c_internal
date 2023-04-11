@@ -1,12 +1,16 @@
 #include<stdio.h>
 #define not main
+extern int x;
 int not()
 {
-    printf("HElLO");
-    printf("%d",a);
+  //  unsigned x;
+    x=10;
+    printf("HElLO\n");
+    printf("%d",x);
     return 0;
 }
-int a=100;
+int x=20;
+
 /*#include<stdio.h>
 #define f(a,b) a##b
 int f(ma,in)()
