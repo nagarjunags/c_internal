@@ -1,0 +1,17 @@
+esacpe characters can also be written in ASCII value
+    but it should be written in octal or hexa
+    eg:  \n
+         ascii of \n = 10
+                  \n =  \012      //octal representation of escape character
+
+
+*taking print size from user
+    eg:   printf("%*d",x,y);
+
+
+*printf always returns length of the cuntrol string it is printing.  -1 if any error occurs.
+-------------------------------------------------------------------------------------------
+
+INPUT STATEMENTS:
+    scanf("cuntrol_string",&var1,-----);
+    
