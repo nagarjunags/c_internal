@@ -14,4 +14,95 @@ esacpe characters can also be written in ASCII value
 
 INPUT STATEMENTS:
     scanf("cuntrol_string",&var1,-----);
-    
+    scanf("%wd",&var1);         //specifying width while taking input
+    eg():   scanf("%2d%d",&x,&y);
+            //input = 222 33
+            //output 22 2
+      Delimeter in scanf:
+            space,tab,enter (default delimeter)  //but in while scanning character space is also considered as a character
+            so to avoid use space in between
+            eg:
+            scanf("%c %c",&a,&b);
+            //input: a b
+            scanf("%c-%c",&a,&b);
+            //input:a-b
+            scanf("%d%*c%d",&a,&b);
+
+     ->scanf will always return the no of variable it is scanning             
+            if error,it will return -1
+    EG:
+        #include<stdio.h>
+        void` main()
+        {
+            printf("\nsum=%d",printf("%*c%*c",a,' ',b,' '));
+        }
+ -----------------------------------------------------------------------------------------------------
+     STRUCTURE OF C:
+
+
+        1.PREPROCESSOR DIRECTIVES:
+                1.comments
+                2.headerfiles
+                3.macros
+
+
+                1.COMMENTS:
+                all the commented lines will get removed from the code before comiplation.
+                    //                 single line comment
+
+                    /*  ---  */        double line comment
+
+                    LINE SLICING:
+                            //      \      comments the next line also.
+
+
+
+                2.HEADER FILES:
+                it contains some pre defined functionalities
+
+                    1.Pre defined header files  #include<file>
+                        pre define header files contains function prototype in predefined macros
+                        
+                        PREDEFINED MACRO:
+                            eg:EOF   //end of file   value=-1
+                               NULL
+                               
+
+
+
+                        2.User Defined headerfile   #iniclude"file_path"
+
+
+                3.MACROS:
+                    #define macro_name value
+                    #undef macro_name
+                    Eg:                       
+                        #include<stdio.h>
+                        #define max 100
+                        int main()
+                        {
+                            printf("%d",max);
+                             max++;                 //lvalue required error
+                            return 0;
+                        }
+                    OPERATORS IN MACRO :   
+                    #     // convert to string
+                        eg:
+                                #include<stdio.h>
+                                #define f(a,b) a*b
+                                #define n "nagarjun"
+                                int main()
+                                {
+                                    int x=36/f(6,6);
+                                    int y=36/6*6;    //x is equivalent to y here
+                                    printf("x=%d\ny=%d"x,y);
+                                    printf(n);
+                                }
+                      ##    //concatenates the two strings
+
+
+    GLOBAL VARIABLES:
+        default value of any variable in heap area will be 0
+        default value of the variable in stacks will have garbage value
+
+        --->default value of the global variable is 0
