@@ -1,0 +1,82 @@
+OPERATORS:
+    .   //access by object
+    ->  //access by address
+    Precedence:
+    1.                      ()  
+                            []
+                            .
+                            ->
+  -----------------------------
+    2.                    unary opeerators.
+                            +  //possitive
+                            -  //negate
+                            ++
+                            --
+                            ~  //1's comple
+                            !
+                            &
+                            *  //de refference operator//indirection operator
+                            sizeof()/???
+                            typecast
+
+
+
+sizeof():
+    returns size of parameter in bytes
+    always returns unsigned integral(int,long int, ..... ) type of value(sizes can never be in -ve) 
+    also called size_t  return type of sizeof() = size_t = unsigned long int
+
+    inside sizeof no assignment / evaluation is possible
+        eg: sizeof(X++);//it will not increment and x remains same
+
+
+, :
+        evaluates from right
+
+
+
+> or <
+    when comparing signed and unsigned value,signed is promoted to unsigned and compared bit by bit
+    
+
+
+ eg:
+    #include<std>
+    int main()
+    {
+        unsigned int x=-1;
+        y=~0;
+        if(y == x)
+            printf(same);
+        else
+            pf(not same);    
+    }   
+-------------------------------
+eg:
+    float x = 0.5;
+    if(x == 0.5)
+        printf("IF");
+    else if(x == o.5f)
+        pf("else if")   //    perfect fractions will be saved in same pattern in both float and double
+    else
+        pf("else");        
+
+---------------------------------------------------------------------------------------------
+
+INCREMENT and DECREMENT OPERATORS:
+
+    pre increment
+        first increment value then use
+    post increment
+        first use then increment 
+    pre decrement
+        first decrement value then use
+    post decrement
+        first use then decrement
+
+    in stand alone/independent expression will be equal to pre increment 
+    ->in any dependent expression all the pre increment/decrement operations will be performed before assignments
+        all post inc/dec will be performed after the assignment   
+
+
+

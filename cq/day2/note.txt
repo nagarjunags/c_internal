@@ -155,3 +155,22 @@ UNFORMATED IO:
         scanf("%[^5]s",str);//stop scanning after hitting 5
         scanf("%[a-z]s",str);reads only letters from a-z and stops when it hits any other characters.
         scanf("%[a-z,A-Z,0-9,' ']s",str);
+
+
+        gets();// to take input string with the spaces....reads untill return key is pressed
+        puts();     gets and puts are deprecated functions(already removed)
+        //uses only base address to read,so,it may take too much of input and stores in memory of other important functions also
+
+
+
+
+        fgets();//file input
+            fgets(str,sizeof(str),stdin)
+            fgets(file_pointer,-----,-----);//to read files
+        fputs()
+
+        getchar()   //buffered IO
+            a=getchar();
+            while(getchar()!=' ');//?
+            b=getchar();
+        putchar()
