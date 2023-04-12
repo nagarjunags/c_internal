@@ -78,5 +78,80 @@ INCREMENT and DECREMENT OPERATORS:
     ->in any dependent expression all the pre increment/decrement operations will be performed before assignments
         all post inc/dec will be performed after the assignment   
 
+NOTE:ALL the unary operator has same precedence but postfix has the greater precedence than prefix
+--------------------------------------------------------------------
+BINAY OPERATOR:
+    ARITHEMATIC OPERAATOR:(+ - * / %)
+        Precedence:
+            1.          * / %   (left to right)/???
+            2.          + -
+        NOTE:modulus operator only take operands in int format.
+                for non int values we use fmod(x,y)//declared in math.h    
 
 
+    RELATIONAL OPERATOR:output will be 0 or 1
+                    >
+                    <
+                    >=
+                    <=
+                    !=
+                    ==
+    BITWISE OPERATOR:
+                    &  (logical and has more precedence than or)
+                    |
+                    ^
+                    ~
+                    >>(PRECEDENCE IS JUST AFTER THE ARITHEMATIC OPERATOR)
+                    <<
+
+
+                    truth table:
+
+                    op1 op2 0r and  ^
+                    0   0   0    0  0
+                    0   1   1    0  1
+                    1   0   1    0  1
+                    1   1   1    1  0
+
+            NOTE:
+                x ^ x =0
+                x ^ 0 =x
+
+            <<       LEFT SHIFT OPERATOR: PERFORMS *2
+
+                    NUM << BITS equivalent to (num*2^bits)
+
+            >>       RIGHT SHIFT OPERATOR: performs /2:
+                     num >> bits equivalent to num/(2^bits) 
+
+                     while right shifting -ve numbers add 1 to void msb
+
+                     eg:
+                     1111 1111 1111 1011    -> -5
+                        >>4
+                     1111 1111 1111 1111    -> (0xffff)
+                       f    f   f    f
+
+    LOGICAL OPERATOR:
+
+            && //logical AND operator:
+
+            || //logical OR Operator
+
+            !  // logical NOT
+
+    TERNARY OPERATOR:
+
+    ASSIGNMENT OPERATOR:
+            =
+            (+=  -=  *=   /=   %=   &=  |=  ^=   >>=   <<=  ) //Shorthand assignment
+
+
+COMMA OPERATOR:
+
+
+
+
+ASSOCIATIVITY:
+        UNARY TERNARY ASSIGNMENT ----- RIGHT TO LEFT
+        REST ALL ---------------------- LEFT TO RIGHT
