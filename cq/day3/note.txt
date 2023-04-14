@@ -16,7 +16,8 @@ OPERATORS:
                             !
                             &
                             *  //de refference operator//indirection operator
-                            sizeof()/???
+                            sizeof()/???//inside size() operator no operations will get executed not even print no assignment......
+
                             typecast
 
 
@@ -103,6 +104,7 @@ BINAY OPERATOR:
                     ~
                     >>(PRECEDENCE IS JUST AFTER THE ARITHEMATIC OPERATOR)
                     <<
+                    
 
 
                     truth table:
@@ -141,14 +143,15 @@ BINAY OPERATOR:
             !  // logical NOT
 
     TERNARY OPERATOR:
+        a?b:c;
 
-    ASSIGNMENT OPERATOR:
+ASSIGNMENT OPERATOR:
             =
-            (+=  -=  *=   /=   %=   &=  |=  ^=   >>=   <<=  ) //Shorthand assignment
+            (+=  -=  *=   /=   %=   &=   |=  ^=   >>=   <<=) //Shorthand assignment
 
 
-COMMA OPERATOR:
-
+COMMA OPERATOR:(seperator operator)
+    ,
 
 
 

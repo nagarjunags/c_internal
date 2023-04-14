@@ -1,0 +1,66 @@
+cdecl
+_cdecl
+__cdecl      //passes the values from actual arguments to formal arguments from right to left
+
+
+
+pascal
+_pascal
+__pascal    //passes the values from actual arguments to formal arguments from left to right
+
+
+eg:return_type _pascal function_name(formal_args);
+
+----------------
+  NOTE:default will be _codecl
+
+  all the parameter in the functions are stored in stack
+------------------------------------------------------------------------------------------------
+
+CUNTROLL STATEMENTS:
+    if(bool)
+    {
+      ---------;
+    }
+    
+
+
+    SWITCH:
+        can only check char,int,enum only;
+        --> case label must be a constant,not a variable(only integer and enum)
+        --> cant use arrays with index   //eg: case a[10]:pf();//error
+
+------------------------------------------------------------------------------------------------
+LOOPS:
+    WHILE(boolean condition)
+      {
+        ----
+        ----
+        auxilary variable;
+      }
+
+      do while LOOPS
+
+
+      for loop 
+          for(init;condition;update)
+          {
+            body of loop;
+          }
+
+
+          for(i=0;;i++)
+          {
+            infinite loop
+          }
+
+
+          for(;;)
+          {
+            infinite loop;
+
+          }
+
+
+
+          9  
