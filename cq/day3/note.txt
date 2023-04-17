@@ -84,8 +84,9 @@ NOTE:ALL the unary operator has same precedence but postfix has the greater prec
 BINAY OPERATOR:
     ARITHEMATIC OPERAATOR:(+ - * / %)
         Precedence:
-            1.          * / %   (left to right)/???
-            2.          + -
+            1.          * /    (left to right)/???
+            2.          %
+            3.          + -
         NOTE:modulus operator only take operands in int format.
                 for non int values we use fmod(x,y)//declared in math.h    
 
@@ -156,5 +157,6 @@ COMMA OPERATOR:(seperator operator)
 
 
 ASSOCIATIVITY:
-        UNARY TERNARY ASSIGNMENT ----- RIGHT TO LEFT
-        REST ALL ---------------------- LEFT TO RIGHT
+        UNARY TERNARY ASSIGNMENT -----  RIGHT TO  LEFT
+        REST ALL ---------------------- LEFT  TO RIGHT
+        
