@@ -1,18 +1,22 @@
-cdecl
-_cdecl
-__cdecl      //passes the values from actual arguments to formal arguments from right to left
+ORDER OF PASSING PARAMETERS:
+
+Cdecl
+_Cdecl
+__Cdecl      //passes the values from actual arguments to formal arguments from right to left
+
+//When using cdecl and pascal data is stored in different general purpose register
 
 
-
-pascal
-_pascal
-__pascal    //passes the values from actual arguments to formal arguments from left to right
+Pascal
+_Pascal
+__Pascal    //passes the values from actual arguments to formal arguments from left to right
 
 
 eg:return_type _pascal function_name(formal_args);
 
 ----------------
-  NOTE:default will be _codecl
+  NOTE:default will be _Codecl
+        //all pre defined functions are Cdecl 
 
   all the parameter in the functions are stored in stack
 ------------------------------------------------------------------------------------------------
@@ -61,6 +65,3 @@ LOOPS:
 
           }
 
-
-
-          9  

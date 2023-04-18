@@ -10,14 +10,15 @@ OPERATORS:
     2.                    unary opeerators.
                             +  //possitive
                             -  //negate
-                            ++
-                            --
+                            ++ //(++c,c++ :: pre,post)
+                                // but, for independent/standalone expression pre or opst doesnt matters 
+                            -- //
                             ~  //1's comple
                             !
                             &
                             *  //de refference operator//indirection operator
                             sizeof()/???//inside size() operator no operations will get executed not even print no assignment......
-
+                                    // returns the memory consumed by var or datatype
                             typecast
 
 
@@ -31,8 +32,7 @@ sizeof():
         eg: sizeof(X++);//it will not increment and x remains same
 
 
-, :
-        evaluates from right
+
 
 
 
@@ -122,13 +122,19 @@ BINAY OPERATOR:
 
             <<       LEFT SHIFT OPERATOR: PERFORMS *2
 
+
+
+
+
+
+
                     NUM << BITS equivalent to (num*2^bits)
 
             >>       RIGHT SHIFT OPERATOR: performs /2:
                      num >> bits equivalent to num/(2^bits) 
 
                      while right shifting -ve numbers add 1 to void msb
-
+                    msb is sign bit only for int not for hexa and other number system
                      eg:
                      1111 1111 1111 1011    -> -5
                         >>4
@@ -137,26 +143,32 @@ BINAY OPERATOR:
 
     LOGICAL OPERATOR:
 
-            && //logical AND operator:
-
-            || //logical OR Operator
-
             !  // logical NOT
+
+            && //logical AND operator:// if first operand is zero rest of te expressions are skipped
+
+            || //logical OR Operator// if the first expression is non zero rest is skipped
+
+            
 
     TERNARY OPERATOR:
         a?b:c;
+        //condition?exp1:exp2;
+
+        eg: a>b? return a : return b; //ERROR!
+            return a>b? a:b;  //correct way
 
 ASSIGNMENT OPERATOR:
             =
             (+=  -=  *=   /=   %=   &=   |=  ^=   >>=   <<=) //Shorthand assignment
 
 
-COMMA OPERATOR:(seperator operator)
+COMMA OPERATOR:(seperator operator)[, :evaluates from left and provides from right]
     ,
 
 
 
 ASSOCIATIVITY:
-        UNARY TERNARY ASSIGNMENT -----  RIGHT TO  LEFT
+        UNARY , TERNARY , ASSIGNMENT -----  RIGHT TO  LEFT
         REST ALL ---------------------- LEFT  TO RIGHT
         
