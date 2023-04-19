@@ -1,0 +1,107 @@
+Vishal dir(Q-spiders):
+-------------------------------
+
+ARRAYS:
+    array is collection of homogenious elements stored in continious memory
+    TYPES:
+        1d array
+        multy d array(maximum is 20d)(max achieved is 30d)//???
+
+
+        1d array:
+        SYNTAX:
+            datatype arr_name[size];
+            ->array index starts from 0 and ends at size-1
+            ->drawback of C:Memory leakage(there is no implicit array boundary checking in c by compiler)
+                    -if we access elements beyond range we get the garbage value
+            ->Partial initialization,remaining memories are filled with zeros
+            ->omly name of array gives the base address
+
+            initialization:
+                int a[4] = {10,20,30,40};//size is optional
+                    printf("%d",a);prints the address of first element
+
+            Reading array from user:
+
+                for(i=0;i<n;i++)//TRAVERSING
+                    scanf("%d",&a[i]);
+                for(i=0;i<n;i++)
+                    printf("%d",a[i])    
+
+            // to find nth largest element in an array of n elements(smallest)
+
+            a[]={7,5,15,23,9};        
+            // wap to rotate elements on left side by k times
+                    
+                    a[]={10,20,30,40,50}
+                    k=2
+                    output={30,40,50,10,20}
+            //wap to print unique elements from the array(not repeating elements)
+            //wap to prnt distinct elements from the array(print all elements but only once)
+            //bubble sort
+            //selection sort
+            //wap to sort first k elements in ascending and remaining elements in descending
+            //to find maximi=um sum and min sum of an array
+                    a[]={5,3,4,1,2}
+                    max sum=5+4+3+2//leaving the smallest element
+                    min sum=1+2+3+4//leaving the largest element
+
+
+            //unique:
+            //wap to find an element which is repeated odd number of times
+
+----------------------------------------------------------------------------
+POINTER:
+    it is a variable which stores the adress of another variable
+        syntax: datatype *ptr_name;
+
+
+        eg:
+            int *p;
+
+            
+                p holds address of some variable
+
+
+            int *p =50;//holds the value 50 as hexa decimal(because addresses are stored in hexa decimal number system)
+
+
+            int *p;
+            p=50//hods as address  same as above value
+
+
+            int *p;
+            *p=50;//dereference(concept of putting * to access the content present in the address)//50 will be stored in the variable pointed by the pointer p
+            
+
+            **p  (pointer to pointer)
+            ***p ()
+
+-----------------------------------------------------------------------------------
+IMPLEMENTING POINTERS ON 1D ARRAY:
+
+    base address of an array is always a constant
+
+    a[2] is equivalent to *(a+2)
+    2[a] is equivalent to *(2+a)
+        //during compile time array representations are converted to pointer representations0
+        //array names are treathed as macros()macros are constant
+
+    arrays are declared as macros
+    a[2]   ----->   #define a base_address 
+
+    =6;(lvalue required error)
+    c= ;(rvalue required ERROR)
+
+
+    macros++;//(ERROR because macros does not have any memory)
+
+
+
+
+    eg:
+
+        int a[4]={10,20,30,40};
+        printf("%d",*a);
+        printf("%d",*a+1);//11
+        printf("%d",*(a+1));//20(incrementing the address)

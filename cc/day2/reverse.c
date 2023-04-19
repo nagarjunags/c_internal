@@ -2,6 +2,6 @@
 int main(void)
 {
     int n;
-    scanf
+    scanf;
     return 0;
 }
