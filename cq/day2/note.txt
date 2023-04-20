@@ -61,7 +61,8 @@ INPUT STATEMENTS:
                 it contains some pre defined functionalities
 
                     1.Pre defined header files  #include<file>
-                        pre define header files contains function prototype in predefined macros
+                        pre define header files contains function prototype(function declaration not definition) in predefined macros
+                        the definitions of the pre defined dfunctipns are located in libraries which are already in binary code
                         
                         PREDEFINED MACRO:
                             eg:EOF   //end of file   value=-1

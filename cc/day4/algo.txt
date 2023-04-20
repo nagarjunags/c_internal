@@ -16,3 +16,18 @@ eg:github.com/nagarjunags/c_internal/cc/day4/sieves_prime.c
     remaining are the primes
 -----------------------------------------------------------------------------------------------------------------
 SELECTION SORT:
+    1.find the smallest element in usorted part
+    2.swap it with 1st element unsorted
+
+                for(i=0;i<n-1;i++)
+                {                           //UNNECESSARY SWAPPING OF SIMILAR ELEMENTS
+                    min=i;
+                    for(j=i+1;j<n;j++)
+                    {
+                        if(a[min]>a[j])
+                            min=j;
+                    }
+                    swap(&a[min],&a[i]);
+                }
+--------------------------------------------------------------------------------------------------------------------------------
+JUGGLING ALGORITHM:

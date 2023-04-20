@@ -103,6 +103,14 @@ FUNCTIONS:
                 return a+b;
             }    
 
+
+            #####
+                    int add(a,b)
+                    int a; int b;
+                    {
+                        ---
+                        ---     // dennis ritchie style of function definition
+                    }
     2.Function prototype/function declaration
         ->function prototype should be before the function call
         ->function prototype can be global or local
@@ -111,7 +119,7 @@ FUNCTIONS:
                 eg:int add (int,int);  OR    int add(int a,int b);// parameter names are optional in the function prototype
 
 
-    3.Function call:
+    3.Function call://static and extern are in heap
         fun_name(actual_parameters);
 
     PARAMETERS PASSING TECHNIQUES:(advantage:avoiding duplicate data)
@@ -124,5 +132,11 @@ FUNCTIONS:
                 ->any changes using those addresses ,the changes will reflect back in calling function
 
 
+//linker error is when global var or macros are not found or prototype is missing
+//////////////////////////10^9  modulo(7)   //what is this?? why we need???//???
 
-//////////////////////////10^9  modulo(7)   //what is this?? why we need??
+
+
+
+
+

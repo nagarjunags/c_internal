@@ -1,6 +1,6 @@
 OPERATORS:
     .   //access by object
-    ->  //access by address
+    ->  //indirection operator//access by address(pointer to structure//???)
     Precedence:
     1.                      ()  
                             []
