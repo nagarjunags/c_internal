@@ -123,3 +123,6 @@ FUNCTIONS:
                 ->we pass addresses as the parameters
                 ->any changes using those addresses ,the changes will reflect back in calling function
 
+
+
+//////////////////////////10^9  modulo(7)   //what is this?? why we need??
