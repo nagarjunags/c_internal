@@ -1,0 +1,125 @@
+day 4 Vishal sir(Q-spiders):
+-----------------------------------------------------------------------------------
+MUlTI-DIMENSIONAL ARRAY:
+    syntax:
+        datatype arr_name[row][col];//in 2d row is optional but col is mandatary
+
+        eg : int a[2][2]={10,20,30,40};
+
+
+                        //a[0][0]   10
+                          a[0][1]   20
+                          a[1][0]   30
+                          a[1][1]   40
+    Reading 2D arrays:
+        int a[10][10];
+        int m=2;//no of rows
+        int n=3;//no of columns
+        for(int i=0;i<m;i++)//ROWs
+        {
+            for(j=0;j<n;j++)//COLUMNS
+            {
+                scanf("%d",&a[i][j]);// 00 01 02
+                                     // 10 11 12 
+            }
+        }   
+
+        for(int i=0;i<m;i++)//ROWs
+        {
+            for(j=0;j<n;j++)//COLUMNS
+            {
+                printf("%d",&a[i][j]); // 00 01 02
+                                       // 10 11 12 
+            }
+            printf("\n");
+        }       
+----------------------------------------------------------------------------------------------
+
+IMPLEMENTING POINTERS IN 2D ARRAY:
+
+    RULES:
+        ->Replace a by a[0]
+        ->When we apply * on a[i] we will get address of first element in the ith row i.e a[i0] equivalent to a[i][0]
+
+        eg:
+            *(*(a+1)-1)
+            *(*(a[0]+1)+1)
+            *(*a[1]+1)
+            -(a[1][0]+1)
+            *a[1][1]
+            = content present in a[1][1]
+        ->during addition add the number to the last index  
+
+        eg  a[2]          ==    *(a+2)
+            a[2][3]       ==    *(*(a+2)+3)
+            a[4][3][2][3] ==    *(*(*(*(a+4)+3)+2)+3)
+
+
+
+------------------------------------------------------------------------------------------
+
+eg count the number of paths form top left to bottom right corner:
+
+     0  1  2
+
+0    1  2  3
+1    4  5  6
+2    7  8  9   
+
+
+            1 2 3 6 9
+            1 2 5 6 9
+            1 2 5 8 9
+            1 4 5 6 9
+            1 4 5 8 9
+            1 4 7 8 9
+
+
+int paths(int m,int n)
+{
+    if(m==1 || n==1)
+        return 1;
+    else 
+        return paths(m,n-1)+paths(m-1,n)//without diagonal   OR   return paths(m,n-1)+paths(m-1,n)+paths(m-1,n-1); //with diagonal
+
+}
+
+----------------------------------------------------------------------------------------
+FUNCTIONS:
+    A set of statements with a particular tasks
+
+
+    1.function defenition(by default functions are extern
+    )
+
+        Syntax:
+            return_type function_name(parqameter_definition)
+            {
+                statements;
+            }
+        EG:
+            int add(int a,int b)//formal parameters`
+            {
+                return a+b;
+            }    
+
+    2.Function prototype/function declaration
+        ->function prototype should be before the function call
+        ->function prototype can be global or local
+                return_type function_name(data_type_of_parameters);return paths(m,n-1)+paths(m-1,n)
+
+                eg:int add (int,int);  OR    int add(int a,int b);// parameter names are optional in the function prototype
+
+
+    3.Function call:
+        fun_name(actual_parameters);
+
+    PARAMETERS PASSING TECHNIQUES:(advantage:avoiding duplicate data)
+        1.call by value:
+            -> WE PASS VALUE AS PARAMETERS
+            ->function defenition creates its own copy of data any change is made to those copies will not reflect back in calling function
+
+        1.call by address:
+                ->we pass addresses as the parameters
+                ->any changes using those addresses ,the changes will reflect back in calling function
+
