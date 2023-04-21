@@ -1,0 +1,141 @@
+VISHAL SIR(Q SPIDER)(DAY 5):
+--------------------------------------------------------------------------------------------------------------------------
+STORAGE CLASSES:
+    1.auto
+    2.register
+    3.extern
+    4.static
+
+
+
+    AUTO:
+        syntax:
+            storage_class datatype var_name;    //memory will be allocated on top of the stack;
+                                                //default storage class for loccal variables
+
+    REGISTER:
+        syntax:
+            register int a; //recomended only to use it for int datatype
+                            //general purpose or CPU register
+                            //faster access
+                            //generally used for loop iterativ variable
+
+
+
+                                                #include<stdio.h>
+
+                                                int main()
+                                                {
+                                                    for(register short i=0;i<100000;i++)
+                                                        printf("%d\n",i);
+                                                    return 0;
+                                                }
+
+
+    EXTERN(HEAP MEMORY)
+        Syntax:
+            extern a;//to access the variables from other programs//??? 
+
+
+
+
+    STATIC:(HEAP MEMORY):SCOPE:is throughout the program
+        ->it must be initialized or else 0(default is 0)
+        ->multiple initialization in same scope will be skipped
+        ->it can remember its values between function calls
+        ->we cannot use static variables as formal parameters
+        ->
+        ->
+        EG:         #include<stdio.h>
+
+                    int main()
+                    {
+                        static int i=5;
+                        if(--i)
+                        {
+                            main();
+                            printf("%d\n",i);
+                        }
+                        return 0;
+                    }
+                               
+
+
+                        LIKAGES :External linkages(global variables)//linkage across  the programs
+                                :internal linkages(static variables)//linkage within the programs
+                                :none(local variables)//no linkages
+
+----------------------------------------------------------------------------------------------------------------
+
+STRINGS:
+    sequence of characters which ends with null character.
+
+    initialization:
+        1.char by char:
+            char s1[6]={'h','e','l','l','o','\0'};
+                //Null character should be included by user only
+        2.by string:
+            CHAR S1[6]="WORLD"   //Null character is placed by compiler since we use double quotes;
+
+ 
+
+    Reading:
+    gets()//boundary check is missing in this function so it is dangerous(it may start read the unlimited string)
+            fgets();//file input
+                fgets(str,sizeof,stdin)
+                                    stdin-for std input from keyboard
+                                    file pointer to read the string from the file
+                                    etc......
+
+
+                    scanf("%[^\n]s",str);//stop scanning only after hitting \n
+                    scanf("%[^5]s",str);//stop scanning after hitting 5
+                    scanf("%[a-z]s",str);reads only letters from a-z and stops when it hits any other characters.
+                    scanf("%[a-z,A-Z,0-9,' ']s",str);
+
+
+//strcpy
+//strcmp
+
+//str palindrome
+//searching sub string in main string
+        INPUT:s1[]="Helloworld"
+                s2[]="or"
+
+                is s2 in s1;
+//find the frequency of characters                
+    display in alphabetical order
+    displaly in the order of appearances
+// programs to reverse words in the given string
+        INPUT:
+            jack and jill
+        OUTPUT:
+            kcaj dan llij
+//reverse order of words in the given string
+    INPUT:
+        jack and jill
+    OUTPUT:
+        jill and jack
+//programs to check 2 strings are anagrams or not
+    INPUT:
+        listen
+        silent
+    ->2  string of same length and same set of charqacters are called anagrams
+//progrqam to check if string is panagram or not
+    INPUT:
+        the quick brown fox jumps over the lazy dog
+        ->string containing all the characters in alphabet is called panagrams
+
+
+-------------------------------------------------------------------------------------------
+POINTER TO CHARACTER:
+
+
+                        EG: char *p = "hello";
+                            printf("%c",*&*p);
+                            p++;
+                            printf("%s",p);//ello
+                            *p++;
+                            printf("%s",p);//llo
+                            ++*p;
+                            printf("%s",p);//mlo

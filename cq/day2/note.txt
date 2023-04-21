@@ -32,7 +32,7 @@ INPUT STATEMENTS:
             if error,it will return -1
     EG:
         #include<stdio.h>
-        void` main()
+        void main()
         {
             printf("\nsum=%d",printf("%*c%*c",a,' ',b,' '));
         }
