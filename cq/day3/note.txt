@@ -12,7 +12,7 @@ OPERATORS:
                             -  //negate
                             ++ //(++c,c++ :: pre,post)
                                 // but, for independent/standalone expression pre or opst doesnt matters 
-                            -- //
+                            -- // /
                             ~  //1's comple
                             !
                             &

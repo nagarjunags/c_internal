@@ -12,7 +12,7 @@ int main(void)
         int a3=sqrt((5*(i*i))+4),a4=sqrt(((5*i*i)-4));
         if(a1==a3 || a2==a4)
             count++;
-        if(count ==n)
+        if(count ==n-1)
         {
             printf("%d",i);
             break;
