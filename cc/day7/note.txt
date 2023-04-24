@@ -1,0 +1,55 @@
+Vsishal Vanaki sir(Q-spiders)
+------------------------------------------------------------------------------------------------------------------------------------------------
+DYNAMIC MEMORY ALLOCATION:
+    There are 4 funcyions in memory alloication:
+
+
+    1.malloc:
+        ->malloc allocates 1 block of memory
+        ->it takes only one parameter/argument
+        ->malloc returns void pointer
+        ->memory used-->HEAP(heap is used for dynamic purposes)
+        ->default value -->garbage
+
+        SYNTAX:
+            void *malloc(size size_t);  //size   = number of elements
+                                        //size_t = size of each elements
+        
+
+        eg:
+            //static declaration:
+                int a[10];
+
+            //dynamic memory allocations:
+                int *p =(int*)malloc(10*sizeof(int));
+
+
+                p[10];//using the above allocated memory
+
+
+            //memory allocation for 2d array
+
+            //static 2d array
+                int a[3][4];//rows=3//colums=4
+
+            //dynamic 2d array
+                //in a multi dimension the first columns contains the pointers pointing to base address of each rows
+                int **p(int**)malloc(3*(sizeof(int*)));
+                int i;
+                for(i=0;i<3;i++)
+                    p[i]=(int *)malloc(4*sizeof(int));
+    2.calloc:
+        Syntax:
+            void *calloc(n, size size_t)
+        ->it allocates multuiple blocks of memory
+        ->it takes 2 parameters/arguments
+        ->it returns voi pointer
+        ->memory --->heap
+        ->default value --->initialised with 0;
+------------------------------------------------------------------------------------------
+POINTER TO AN ARRAY:// day7/pointer_to_entire_array.img
+    Syntax:
+        data_type (*p)[size];
+
+
+        

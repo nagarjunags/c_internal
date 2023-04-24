@@ -1,0 +1,1 @@
+why 0 in global and garbage in local variable,but garbage in malloc even though it is in heap memory
