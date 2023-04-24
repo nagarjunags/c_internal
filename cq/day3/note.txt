@@ -20,6 +20,13 @@ OPERATORS:
                             sizeof()/???//inside size() operator no operations will get executed not even print no assignment......
                                     // returns the memory consumed by var or datatype
                             typecast
+                                        eg:
+                                            i=5;
+                                            i+i=10
+                                            i++i=ERROR
+                                            i+++i=11
+                                            i++++i=ERROR
+                                            i+++++i=compilerdependent
 
 
 

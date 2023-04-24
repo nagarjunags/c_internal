@@ -4,18 +4,18 @@ void reverse(char *p);
 int main()
 {
     char a[100];
-    static char b[100]="";
+    //static char b[100]="";///???
     scanf("%s",a);
     reverse(a);
     return 0;
 }
 void reverse(char *p)
-{
-    
+{   static char b[100]="";
     if(*p)
     {
+        
         reverse(p+1); 
         printf("%c",*p);
-        strncat(b,p,1);
+        strncat(b,p,1);///???
     }
 }

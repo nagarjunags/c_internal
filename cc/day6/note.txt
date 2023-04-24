@@ -7,6 +7,7 @@ ESCAPE CHAARACTERS:
 
 -------------------------------------------------------------------
 //???
+// size of address == bit of compiler(2b for 16bit compiler and 4bytes in32 bit compiler)
     eg:
     main()
     {
@@ -17,3 +18,7 @@ ESCAPE CHAARACTERS:
         p++;q++;t++;
         printf("%p %p %p "p,q,t);
     }
+
+
+    ->address gets incremented based on the datatype it is pointing
+    

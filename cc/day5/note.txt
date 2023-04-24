@@ -40,11 +40,13 @@ STORAGE CLASSES:
 
 
     STATIC:(HEAP MEMORY):SCOPE:is throughout the program
+
+    ##static in main function in java(public static void main()) is because static functions or static variable can be accessed without using an object(by using class_name .member)similarly os or jvm accesses the main function bys using program_name .main(because in java program name and the class name containing the main function should be same)
         ->it must be initialized or else 0(default is 0)
         ->multiple initialization in same scope will be skipped
         ->it can remember its values between function calls
         ->we cannot use static variables as formal parameters
-        ->
+        ->it cant be in function parameter
         ->
         EG:         #include<stdio.h>
 
@@ -139,3 +141,7 @@ POINTER TO CHARACTER:
                             printf("%s",p);//llo
                             ++*p;
                             printf("%s",p);//mlo
+
+//wap to find triplet whose sum is k
+//find the sub array with the given sum
+//find the 

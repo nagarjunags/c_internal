@@ -1,4 +1,4 @@
-char *reverse(char *p)
+char *reverse(char *p)//see rev3.c for output
 {
     static char a[100];
     static int i;
