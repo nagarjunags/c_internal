@@ -1,10 +1,11 @@
 ///////STRING BASED:
+//wap to print all possible sub-string
 //wap to print permutations of the given strings
 //wap to reverse a tring except first and last character
 //wap to print all sub strings of the given string
-//longest palindromic subseq
+//longest palindromic subseq//done
         "BBABCBCAB"
 
-        BBBBB-5
-        BBCBB-5
-        BABCCBAB-7
+         BBBBB-5
+         BBCBB-5
+         BABCCBAB-7

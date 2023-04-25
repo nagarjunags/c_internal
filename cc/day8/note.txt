@@ -124,3 +124,66 @@ STRUCTURES:
                         }
 -------------------------------------------------------------------------------------------
 STRUCTURE PADDING AND DATA ALIGNMENT
+
+
+        DATA BUS: 4 bytes
+        Machine cycle =1/f
+                ///IMG day8_memory_pool
+            
+
+        eg:
+            struct A
+            {
+                char ch;//1 byte
+                                        //1 padding
+                short int i;//2 bytes
+            }
+
+
+            struct B
+            {
+               short int i;//2bytes
+               char ch;//1bytes//1padding
+               int j;//4 bytes
+            }
+            //the starting address of any datatype should be muktiple ofnits size
+            eg:
+            struct C
+            {
+                char ch;//1byte//sarting address=1000
+                //7 byte padding//(Natural alignment)
+                double d;//starting address is 1008
+                int j;//starting address is 1016
+                //another 4 byte padding (variable type alignment) to make total memory is muktiple of largest datatype
+            }//??? always declare in ascending or descending order of size of the datatype
+
+
+            BIT FIELDS IN C GFG//???
+            struct c
+            {
+                int year;        //4BYTES
+                int day:5;//uses only 5 bits //1 BYTES
+                int month:4;// 1 BYTES
+                //2 BYTSE VARIABLE PADDING.
+            }
+---------------------------------------------------------------------------------------------------------
+UNIONS
+    Collection of heterogenious elements stored in continious memory but all the members of unions share the common memory
+    eg:
+        union x
+        {
+            char u[z];
+            int i;
+            int j;
+        };
+        int main()
+        {
+            union x y;
+            y.u[0]=3;
+            y.u[1]=2;
+
+            y.i=10;
+
+            printf("%d  %d  %d",y.u[0],y.u[1],y.i,);//3  2  515 
+                                                //the total memory filled in this union is 16 bit and the int is also of 2 byte so it merges everything and return 515
+        }    

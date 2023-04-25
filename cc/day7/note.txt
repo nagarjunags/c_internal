@@ -43,7 +43,7 @@ DYNAMIC MEMORY ALLOCATION:(#include<stdlib.h>)
             void *calloc(n, size size_t)
         ->it allocates multuiple blocks of memory
         ->it takes 2 parameters/arguments
-        ->it returns voi pointer
+        ->it returns void pointer
         ->memory --->heap
     ####->default value --->initialised with 0;
 

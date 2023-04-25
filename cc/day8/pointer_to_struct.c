@@ -3,10 +3,8 @@
 #include<stdlib.h>
 struct Std
 {
-    
     int id;
     float mark;
-
 };
 /*int main()//static memory allocation
 {
