@@ -73,4 +73,3 @@ DYNAMIC MEMORY ALLOCATION:(#include<stdlib.h>)
 POINTER TO AN ARRAY:// day7/pointer_to_entire_array.img
     Syntax:
         data_type (*p)[size];
-
