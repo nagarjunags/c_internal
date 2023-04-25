@@ -76,10 +76,19 @@ STRING LIBRARY FUNCTIONS:#include<string.h>
 --------------------------------------------------------------------------------
 STRUCTURES:
     Collection of heterogenious elements stored in continious memory
+    
 
     ->to access members of structure, we need to use dot operator [ . ]
     ->we can access member of structure,only if memory is allcated for the members
     ->memory gets allocated to all members,when we create instance or variable of structure
+    ->we cannot create instance of structure insideits own declaration(because it creates inception) 
+    ->we can create pointer to structure variable inside its own declaration
+                    struct std
+                    {
+                        int id;
+                        struct std *p;
+                    };
+
 
 
     syntax:
@@ -93,3 +102,25 @@ STRUCTURES:
         };
 
         eg:
+            struct emp
+            {}//strcpy to store any data in struct(even for scanf use temp variable)
+
+                        #include<stdio.h>
+                        struct Emp
+                        {
+                            char name[20];
+                            int id;
+                            float sal;
+
+                        };
+                        int main()
+                        {
+                            struct Emp x={"Dennis",101,1000000};
+                            struct Emp y={.id=102, .sal=12000, .name="kalam"};
+                            struct Emp z={"Michal"};
+                            printf("%s  %d  %f",z.name,z.id,z.sal);
+                            return 0;
+                            
+                        }
+-------------------------------------------------------------------------------------------
+STRUCTURE PADDING AND DATA ALIGNMENT
