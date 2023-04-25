@@ -31,6 +31,8 @@ MUlTI-DIMENSIONAL ARRAY:
                 printf("%d",&a[i][j]); // 00 01 02
                                        // 10 11 12 
             }
+
+
             printf("\n");
         }       
 ----------------------------------------------------------------------------------------------
@@ -108,7 +110,7 @@ FUNCTIONS:
                     int add(a,b)
                     int a; int b;
                     {
-                        ---
+                         ---
                         ---     // dennis ritchie style of function definition
                     }
     2.Function prototype/function declaration

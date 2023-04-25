@@ -1,6 +1,6 @@
 Vsishal Vanaki sir(Q-spiders)
 ------------------------------------------------------------------------------------------------------------------------------------------------
-DYNAMIC MEMORY ALLOCATION:
+DYNAMIC MEMORY ALLOCATION:(#include<stdlib.h>)
     There are 4 funcyions in memory alloication:
 
 
@@ -10,7 +10,7 @@ DYNAMIC MEMORY ALLOCATION:
         ->malloc returns void pointer
         ->memory used-->HEAP(heap is used for dynamic purposes)
         ->default value -->garbage
-
+ 
         SYNTAX:
             void *malloc(size size_t);  //size   = number of elements
                                         //size_t = size of each elements
@@ -45,11 +45,32 @@ DYNAMIC MEMORY ALLOCATION:
         ->it takes 2 parameters/arguments
         ->it returns voi pointer
         ->memory --->heap
-        ->default value --->initialised with 0;
+    ####->default value --->initialised with 0;
+
+
+            //static declaration
+                int a[10];
+
+            //dynamic allocation with calloc
+                int *p = calloc(2,5*size(int));
+                                2 blocks [10 bytes]
+                                    or 5 elements 
+    3.realloc:
+        synttax:
+            ptr=realloc(ptr,new_size)
+
+
+            ->it is used for adding or removing memory from the existing ones
+            ->by changing the memory we will not lose the existing data
+            eg:
+                int *p=(int *)malloc(10*sizeof(int))
+                p=realloc(p,20*sizeof(int));
+
+    4.free():
+        ->when we free the memory the data will not be deleted
+
 ------------------------------------------------------------------------------------------
 POINTER TO AN ARRAY:// day7/pointer_to_entire_array.img
     Syntax:
         data_type (*p)[size];
 
-
-        

@@ -7,8 +7,9 @@ int main(void)
     char *p ="Jack";
 
     vp=&ch;
-    printf("%c",*(char *)vp);//j
+    printf("%c\n",*(char *)vp);//j
     vp=&i;
-    printf("%c",*(int *)vp);
+    printf("%c\n",*(int *)vp);//A
+    
     return 0;
 }

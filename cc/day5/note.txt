@@ -114,7 +114,7 @@ STRINGS:
         OUTPUT:
             kcaj dan llij
 //reverse order of words in the given string
-    INPUT:
+    INPUT: 
         jack and jill
     OUTPUT:
         jill and jack
