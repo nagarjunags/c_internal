@@ -73,5 +73,23 @@ STRING LIBRARY FUNCTIONS:#include<string.h>
         strdup copies the content of source_string to a new string created by inside malloc() and this function returns the bas address of duplicate
 
 
+--------------------------------------------------------------------------------
+STRUCTURES:
+    Collection of heterogenious elements stored in continious memory
 
-                                                             
+    ->to access members of structure, we need to use dot operator [ . ]
+    ->we can access member of structure,only if memory is allcated for the members
+    ->memory gets allocated to all members,when we create instance or variable of structure
+
+
+    syntax:
+
+        struct struct_name
+        {
+            data_member1;
+            data_member2;
+            ---
+            ---
+        };
+
+        eg:
