@@ -12,7 +12,7 @@ void printlist(struct Node* head);
 int main() {
     struct Node* head = NULL;
     int n, element;
-    
+    printf("\nhead ->  %p\n",head);
     // creating a list of n elements
     printf("Enter the number of elements: ");
     scanf("%d", &n);
@@ -21,8 +21,10 @@ int main() {
         scanf("%d", &element);
         append(&head, element);
     }
+    printf("\nhead ->  %p\n",head);
     
     printlist(head);
+    printf("\nhead ->  %p\n",head);
     return 0;
 }
 
@@ -49,7 +51,7 @@ void printlist(struct Node* head) {
         printf("%d -> ", head->data);
         head = head->next;
     }
-    printf("NULL\n");
+   // printf("NULL\n");
 }
 
 
