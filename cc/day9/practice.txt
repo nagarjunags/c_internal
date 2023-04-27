@@ -13,4 +13,4 @@
             INPUT:
             9-1001             
 
-//multiply 2 numbera using bitwise operators(Russian peasant)            
+//multiply 2 numbera using bitwise operators(Russian peasant)

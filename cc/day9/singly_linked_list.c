@@ -8,10 +8,11 @@ struct Node {
 
 void append(struct Node** head_ref, int new_data);
 void printlist(struct Node* head);
+void listPush(struct Node **head_ref,int new_data);
 
 int main() {
     struct Node* head = NULL;
-    int n, element;
+    int n, element,key;
     printf("\nhead ->  %p\n",head);
     // creating a list of n elements
     printf("Enter the number of elements: ");
@@ -25,6 +26,23 @@ int main() {
     
     printlist(head);
     printf("\nhead ->  %p\n",head);
+
+
+    printf("\nEnter the number of elements to push:");
+    scanf("%d",&n);
+    printf("\nEnter the elements to push:");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&element);
+        listPush(&head,element);
+    }
+    printlist(head);
+    printf("\nhead ->  %p\n",head);
+
+    printf("\nEnter the new element to insert:");
+    scanf("%d",&element);
+    printf("Enter the key element after which the new element should be inserted:");
+    scanf("")
     return 0;
 }
 
@@ -44,14 +62,34 @@ void append(struct Node **head_ref, int new_data) {
     }
     
     current->next = new_node;
+
+
 }
 
-void printlist(struct Node* head) {
+void printlist(struct Node* head) 
+{
     while (head != NULL) {
         printf("%d -> ", head->data);
         head = head->next;
     }
    // printf("NULL\n");
+}
+
+
+void listPush(struct Node **head_ref,int new_data)
+{
+    struct Node *new_element=(struct Node *)malloc(sizeof(struct Node));
+    new_element->data=new_data;
+    if((*head_ref)==NULL)
+    {
+        new_element->next=NULL;
+        
+    }
+    else
+    {
+        new_element->next=(*head_ref);
+    }
+    (*head_ref)=new_element;
 }
 
 

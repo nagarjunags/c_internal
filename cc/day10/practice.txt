@@ -1,0 +1,14 @@
+//wap swap nodes without swapping data
+    ->x and y may or may not be adjacent
+    ->eiither x or y be the head node
+    ->either x or y may be the last node
+    ->either x and y may not be present in the linked list
+
+
+//delete nodes`
+//swap nodes
+//rev nodes
+//count nodes
+//sort list
+//add two numbers in linked list
+
