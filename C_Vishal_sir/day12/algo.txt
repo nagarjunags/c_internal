@@ -1,0 +1,4 @@
+TREES
+    1.Binary trees:(atmost two children)
+
+//KTH LARGEST ELEMENT IN THE ARRRAY(HEAP DATA STRUCTURE)

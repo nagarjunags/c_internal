@@ -5,10 +5,12 @@
     ->either x and y may not be present in the linked list
 
 
-//delete nodes`
+//delete nodes
 //swap nodes
 //rev nodes
 //count nodes
 //sort list
 //add two numbers in linked list
 
+//multiply 2 numbers using only binary operators
+//keys and locks

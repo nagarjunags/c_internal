@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+ead_ref;
+    new_node->data=new_data;
+    while(temp!=NULL && temp->data!=key)
+        temp=temp->next;
+    if(temp==NULL)
+        return;
+    new_node->next=temp->next;
+    temp->next=new_node;
+        
+}
 struct Node {
     int data;
     struct Node* next;
@@ -42,7 +51,12 @@ int main() {
     printf("\nEnter the new element to insert:");
     scanf("%d",&element);
     printf("Enter the key element after which the new element should be inserted:");
-    scanf("")
+    scanf("%d",&key);
+    insertAfter(&head,key,element);
+    printlist(head);
+
+    printf("\nhead ->  %p\n",head);
+
     return 0;
 }
 
@@ -90,6 +104,19 @@ void listPush(struct Node **head_ref,int new_data)
         new_element->next=(*head_ref);
     }
     (*head_ref)=new_element;
+}
+void insertAfter(struct Node **head_ref,int key,int new_data)
+{
+    struct Node *new_node = (struct Node *)malloc(sizeof(struct Node));
+    struct Node *temp=head_ref;
+    new_node->data=new_data;
+    while(temp!=NULL && temp->data!=key)
+        temp=temp->next;
+    if(temp==NULL)
+        return;
+    new_node->next=temp->next;
+    temp->next=new_node;
+        
 }
 
 

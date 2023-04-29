@@ -5,17 +5,4 @@ class and struct
     class has data_members and member function
     struct has only data_members
 --------------------------------------------------------------------------------------------------------------
-
-     
-
-
-
-
-
-
-
-
-
-
-
-     
+stl standard template layouts gfg//???
