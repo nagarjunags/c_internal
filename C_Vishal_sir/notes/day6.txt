@@ -1,0 +1,24 @@
+ESCAPE CHAARACTERS:
+
+    /n - new line
+    /b - backspace
+    /r - (carriage return)brings cusor to the first character of the current line
+
+ 
+-------------------------------------------------------------------
+//???
+// size of address == bit of compiler(2b for 16bit compiler and 4bytes in32 bit compiler)
+    eg:
+    main()
+    {
+        char*p;
+        int *q;
+        float *t;
+        p=q=t=0;
+        p++;q++;t++;
+        printf("%p %p %p "p,q,t);
+    }
+
+
+    ->address gets incremented based on the datatype it is pointing
+    
