@@ -1,0 +1,71 @@
+Vishal sir(Q- spiders`)
+___________________________________________________________________________
+
+LOOPS:
+    while
+    do while
+    for
+
+
+    while:
+        this loop is used when we dont know the number of iteration
+
+        while(cond)
+        {
+            statements;
+            auxilary_variables;//variable which comtrolls loops
+        }
+
+        while(1)
+        {
+            //infinite`
+        }
+        while(0)
+        {
+            //dead
+        }
+
+
+    
+
+
+
+    DO WHILE: (exit4 controlled loop):
+        //menu driven applications //???
+
+
+        do
+        {
+            statements;
+            auxilary_var;
+        }
+        while(cond);
+
+
+    FOR LOOP:
+    
+
+        syntax:
+            for(init;cond;update)
+            {
+                statements;
+            }
+            next_statements;
+
+// reverse number
+// palindrome number
+// armstrong number  153
+                    1^3 
+// lucky number 
+//////
+// prime:
+    1.prime or not
+    2.primes up to n
+    3.print primes in range m and n
+    4.print sexy prime in given range m and n(pair of primes whose diff is 6)
+//fibonacci series
+    1.print first n fibonacci    
+    2.print nth fibonacci series
+    3.fibonacci or not
+//1,2,1,3,2,5,3,7,5,11,8,13,13,17.......find nth number in the series(mixed series fibonacci and prime)
+///8085,8086 16bit ;8051 //after embedded 
