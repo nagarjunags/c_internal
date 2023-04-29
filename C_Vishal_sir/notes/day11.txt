@@ -1,0 +1,76 @@
+//josephus problem
+    //using recursion:
+    int josephus(int n, int k)
+    {
+        if(n==1)
+            return 1;
+        else
+        {
+            return(josephus(n-2,k)+k-1)%n+1;
+        }        
+    }
+
+
+
+    //using loops
+
+    int josephus(int n,int k)
+    {
+        int i=1,ans=0;
+
+        while(i<=n)
+        {
+            ans=(ans+k)%i++;
+        }
+        return ans+1;
+    }
+
+
+
+//Quick Sort:
+    ->quick sort uses devide and conquer method
+    ->select one element as pivot
+    ->partition element around the pivot
+    ->all bigger elements are kept on right side
+    ->all smaller elements will kept on left side
+        Chosing pivot element:
+            1->1st element of the array
+            2->last element of the array
+            3->middle element as pivot
+            4->any random element as pivot
+    ->if array is descending but u need asscending then dont use quick sort//use merge sort
+    ->use quick when array elements are not at all sorted
+    ->use wave sort for if one big and one small elements are together
+    //function call":
+        quicksort(arr,0,n-1);
+
+
+    int partition(int arr[],int low,int high)
+    {
+        int i,j,pivot=arr[high];
+        i=low - 1;//correct position of pi so far
+        for(j=low;j<=high-1;j++)
+        {
+            if(arr[j]<pivot)
+            {
+                i++;//current position of pi should be increased;
+                swap(&arr[j],&arr[i]);
+            }
+        }
+        swap(&arr[i+1],arr[high]);
+        return i+1;
+    }
+
+
+    void quicksort(int arr[],int low,int high)
+    {
+        int pi;
+        if(low>high)
+        {
+            pi=partition(arr,low,high);
+
+            quicksort(arr,0,pi-1);//quick sort left
+            quicksort(arr,pi+1,high);//quick sort right                     
+
+        }
+    }    

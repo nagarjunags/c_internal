@@ -1,0 +1,8 @@
+class and struct
+    class is private
+    struct is public
+
+    class has data_members and member function
+    struct has only data_members
+--------------------------------------------------------------------------------------------------------------
+stl standard template layouts gfg//???
