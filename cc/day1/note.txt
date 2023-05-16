@@ -1,0 +1,219 @@
+//VISHAL(Q-spiders)////////
+no function overloading in c
+
+DATATYPES:
+    BY default all variables are signed variables
+
+    char:
+        ascii
+
+
+        'A'  =  65
+        'z' =   90
+        'a'  =  97
+        'z' =   11
+        '0' =   48
+        '9'   = 57
+        '\0'  = 0
+        ' ' =  32
+        '\n'  = 10
+        '!'   = 33 
+
+-->internal operation for comparison is subtraction
+
+floating point issue:
+    eg
+        1.3f == 1.3
+            false  (because binary form of 1.3 is reccuring and its value differs in both float and double )
+
+
+
+MODIFIERS:
+    SIZE MODIFIERS:
+        1.short
+        2.long
+                you can use long twice in 32 bit compiler(with int only //???  )
+            ->size of long double is 10 
+            ->default datatypde in c is int
+------------------------------------------------------------------------------------------------------------------------
+VARIABLS:
+    RULES:
+        1.start with alpha or '_'
+        2.only alpha , digits and '_' no other spcl character
+        3.no keywords
+        4.length of variable is 31 but ansi recognizes only first 8
+        5.Case sensitive
+        6.no 2 successive underscores   (pre defined name(NO ERROR))
+                            eg:__FILE__
+                               __TIME__
+----------------------------------------------------------------------------------------------------------------
+STRUCTURE OF C:
+
+
+    PREPROCESSOR DIRECTIVES:
+        starts with #
+
+
+        1.#include
+        ->pre define header files contains function prototype in predefined macros
+        
+            1.#include<pre_defined>      c\tc\include (system folde )    after c:\tc\bin  (user folder)
+            2.#include"User_defined"     c:\tc\bin  (user folder)     after     c\tc\include (system folde )`
+
+
+            ->header file contain function declaration(function prototype)
+            ->header file contains pre defined macro defenitions
+                    NULL is a macro value is 0x0// also its NULL pointer
+                    EOF is a macro value is -1
+            ->headerfile contains pre defined structure declaration        
+
+            FILE is alias name for file struct//pressent in stdio.h
+
+
+        2.#Define
+            syntax:
+                #define macro_name macro_value
+                macros are only replaced during compile time
+
+        3.GLOBAL VARIABLES: Scope-global(anywhere)
+                    default value of any variable in heap area will be 0 (Global)
+                    default value of the variable in stacks will have garbage value(local )
+                    extern keyword is used to access variable which are declared globally in other programs
+                            if not found (ERROR TYPE = linker error)
+                        ->extern keyword first searches the variable in present program and then in other programs
+
+
+    FUNCTION DECLARATION:
+
+
+
+
+
+    MAIN FUNCTION:
+
+
+
+    
+        int main()
+        {
+
+
+
+            return 0;//because it follows proper acknowledgement (// 0 means executed with no error //??? find other values and their meanings)
+
+        }
+
+
+        void main()
+        {
+
+                //no proper acknowledgement
+
+        }
+
+
+
+    LOCAL VARIABLES//declared in HEAP Area
+        declared inside a function
+
+        int main()
+        {
+            int a;// must be declared in starting of the function //prints garbage value
+            printfa();
+            int y;// error in original c dev by d ritchie
+        }
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+INPUT/OUTPUT STATEMENTS:
+
+    Formatted:
+        scanf()      printf()//scanf returns the number of arguments passed
+    Un-formatted:
+        gets()      puts()  //buffered IO  //ie the will read everything and stores in the buffewred memory
+        getchar()   putchar()
+
+
+
+
+    scanf("formaqt_specifier",address_of_the_variable);
+
+
+ 
+------------------------------------------------------------------------------------------------------------------
+CONTROLL STATEMENTS:
+    if
+    if else
+    nested if
+    if else if ladder
+    switch()//no need of break for last case//???
+            //no 2 cases eshould be same(abiguity)
+            //only supports real numbers no floats(floating point issues)
+
+
+
+                                                    % is equal for *  / -
+                                                    n%m=n-(n/m)*m;
+    break// brings controll out of the block
+        //Can only be used in switch and loops
+    continue // Skips the current iteration
+            // can only be used only in loops
+    return // returns the values to the calling function
+            //can return only one value
+---------------------------------------------------
+        ' ' =  32
+        '\n'  = 10
+        '!'   = 33 
+
+-->internal operation for comparison is subtraction
+
+floating point issue:
+    eg
+        1.3f == 1.3
+            false  (because binary form of 1.3 is reccuring and its value differs in both float and double )
+
+
+
+MODIFIERS:
+    SIZE MODIFIERS:
+        1.short
+        2.long
+                you can use long twice in 32 bit compiler(with int only //???  )
+            ->size of long double is 10 
+            ->default datatypde in c is int
+------------------------------------------------------------------------------------------------------------------------
+VARIABLS:
+    RULES:
+        1.start with alpha or '_'
+        2.only alpha , digits and '_' no other spcl character
+        3.no keywords
+        4.length of variable is 31 but ansi recognizes only first 8
+        5.Case sensitive
+        6.no 2 successive underscores   (pre defined name(NO ERROR))
+                            eg:__FILE__
+                               __TIME__
+----------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+OPERATORS
+        based on operands:
+            1.unary
+            2.binary
+            3.ternary
+
+
+        based on operation;
+        .
+
+            ARITHEMATIC OPERAATOR:(+ - * / %)
+                Precedence:
+                    1.          * /    (left to right)/???
+                    2.          %
+                    3.          + -
+                NOTE:modulus operator only take operands in int format.
+                        for non int values we use fmod(x,y)//declared in math.h    
+
+
+                    format specifiers
+                        %d
+                        %3d
+                        %*d,
